@@ -227,7 +227,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -942,7 +942,8 @@ MonoBehaviour:
   m_snapPosition: 0
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
-  m_grabPoints: []
+  m_grabPoints:
+  - {fileID: 1156823315}
   handler: {fileID: 15978531}
   originalPos: {fileID: 1563835131}
 --- !u!65 &1156823315
@@ -962,7 +963,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -973,7 +974,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156823310}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1336,6 +1337,36 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1196312860}
     m_Modifications:
+    - target: {fileID: 3480180546024248466, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480180546708269902, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480180547105057241, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480180547154161482, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480180547699802469, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480180547851720714, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3781269207718660015, guid: 4c0ee7a14e52ba544b89c2f777670cca,
         type: 3}
       propertyPath: _cameraRigRef
@@ -1401,6 +1432,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: OVRControllerHands
       objectReference: {fileID: 0}
+    - target: {fileID: 7791990264234033040, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791990264787972413, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791990265212214679, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791990265444677731, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791990265756042277, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791990265857454750, guid: 4c0ee7a14e52ba544b89c2f777670cca,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9205377790416818695, guid: 4c0ee7a14e52ba544b89c2f777670cca,
         type: 3}
       propertyPath: _cameraRigRef
@@ -1422,7 +1483,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7791990265444677731, guid: 4c0ee7a14e52ba544b89c2f777670cca,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1832182850}
+      addedObject: {fileID: 1832182852}
     - targetCorrespondingSourceObject: {fileID: 7791990265756042277, guid: 4c0ee7a14e52ba544b89c2f777670cca,
         type: 3}
       insertIndex: -1
@@ -1450,7 +1511,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3480180547154161482, guid: 4c0ee7a14e52ba544b89c2f777670cca,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1600706642}
+      addedObject: {fileID: 1600706644}
     - targetCorrespondingSourceObject: {fileID: 3480180547851720714, guid: 4c0ee7a14e52ba544b89c2f777670cca,
         type: 3}
       insertIndex: -1
@@ -1846,7 +1907,7 @@ GameObject:
   - component: {fileID: 1511975275}
   - component: {fileID: 1511975274}
   - component: {fileID: 1511975273}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1954,7 +2015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1563835131
 Transform:
   m_ObjectHideFlags: 0
@@ -1977,7 +2038,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1394953116}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1600706642
+--- !u!65 &1600706644
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1996,8 +2057,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.08602297, y: 0.030471325, z: 0.08248359}
-  m_Center: {x: 0.049999997, y: -0.01, z: 0}
+  m_Size: {x: 0.09645514, y: 0.02903676, z: 0.07838205}
+  m_Center: {x: 0.05, y: -0.01, z: 0}
 --- !u!1 &1635395029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,7 +2540,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1394953116}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1832182850
+--- !u!65 &1832182852
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2498,8 +2559,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.097506344, y: 0.030893803, z: 0.08248359}
-  m_Center: {x: -0.049999997, y: 0.01, z: 0}
+  m_Size: {x: 0.09645514, y: 0.02903676, z: 0.07838205}
+  m_Center: {x: -0.06177243, y: 0.01, z: 0.0033881478}
 --- !u!1001 &1856340070
 PrefabInstance:
   m_ObjectHideFlags: 0

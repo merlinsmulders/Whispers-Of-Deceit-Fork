@@ -11,7 +11,7 @@ public class GoBackInMenu : MonoBehaviour
     Vector3 mainMenuPos;
     public void Start()
     {
-        mainMenuPos = new Vector3(18f, 1.8f, 7.5f);
+        mainMenuPos = new Vector3(-26f, 1.5f, 46.75f);
     }
     public void OnTriggerEnter(Collider other)
     {

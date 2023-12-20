@@ -11,7 +11,8 @@ public class GoBackInMenu : MonoBehaviour
     Vector3 mainMenuPos;
     public void Start()
     {
-        mainMenuPos = new Vector3(-26f, 1.5f, 46.75f);
+        mainMenuPos = new Vector3(-34f, 0.8f, -17.75f);
+        Player.transform.position = mainMenuPos;
     }
     public void OnTriggerEnter(Collider other)
     {

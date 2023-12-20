@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class DoorOpenscript : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
     public float sphereRadius;
 
-    public void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
     public void Update()
     {
         if(Physics.CheckSphere(transform.position, sphereRadius))

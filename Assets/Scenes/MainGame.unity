@@ -1310,7 +1310,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678266659}
-  - component: {fileID: 678266660}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1333,20 +1332,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1960333790}
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!114 &678266660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678266658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de278adfa76523c4ca5c8041eabf933d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 640608916}
-  sphereRadius: 3
 --- !u!1 &689134262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,17 +2265,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e0c79920340321045a8b64469f25a791,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.683
+      value: -34.257
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0c79920340321045a8b64469f25a791,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0342
+      value: 1.301
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0c79920340321045a8b64469f25a791,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.295
+      value: -19.074
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0c79920340321045a8b64469f25a791,
         type: 3}
@@ -2509,7 +2494,7 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 1077594792}
   _rigidbody: {fileID: 1077594794}
-  _physicsGrabbable: {fileID: 0}
+  _physicsGrabbable: {fileID: 1077594791}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -3780,7 +3765,7 @@ Transform:
   m_GameObject: {fileID: 1363113753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3542743, y: 0.91, z: -1.7071236}
+  m_LocalPosition: {x: -21.87, y: 1.741, z: -43.95}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3855,6 +3840,7 @@ GameObject:
   - component: {fileID: 1401662612}
   - component: {fileID: 1401563594}
   - component: {fileID: 1409251581}
+  - component: {fileID: 1409251582}
   m_Layer: 8
   m_Name: OVRPlayerController
   m_TagString: player
@@ -4187,6 +4173,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpotLight: {fileID: 1542236933}
+--- !u!82 &1409251582
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394920756}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f06eff2306c5bef4ab8098e31eb20fdd, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1466198911
 GameObject:
   m_ObjectHideFlags: 0
@@ -4873,7 +4955,7 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 1077594792}
   _rigidbody: {fileID: 1077594794}
-  _physicsGrabbable: {fileID: 0}
+  _physicsGrabbable: {fileID: 1077594791}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -6254,12 +6336,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3b5d911a73c8f41478d947e3c69ed873,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.35157
+      value: 3.35
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3b5d911a73c8f41478d947e3c69ed873,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b5d911a73c8f41478d947e3c69ed873,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.128308
+      value: 6.13
       objectReference: {fileID: 0}
     - target: {fileID: 1329313576866156959, guid: 3b5d911a73c8f41478d947e3c69ed873,
         type: 3}
@@ -6866,7 +6953,7 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 1077594792}
   _rigidbody: {fileID: 1077594794}
-  _physicsGrabbable: {fileID: 0}
+  _physicsGrabbable: {fileID: 1077594791}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8

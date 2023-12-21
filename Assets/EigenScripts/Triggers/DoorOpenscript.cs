@@ -8,7 +8,7 @@ public class DoorOpenscript : MonoBehaviour
     public float sphereRadius;
     public LayerMask layerMask;
 
-    public void DoorOpensTrigger()
+    public void Update()
     {
         if(Physics.CheckSphere(transform.position, sphereRadius, layerMask))
         {

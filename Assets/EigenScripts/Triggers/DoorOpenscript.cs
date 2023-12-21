@@ -6,10 +6,11 @@ public class DoorOpenscript : MonoBehaviour
 {
     public Animator animator;
     public float sphereRadius;
+    public LayerMask layerMask;
 
-    public void Update()
+    public void DoorOpensTrigger()
     {
-        if(Physics.CheckSphere(transform.position, sphereRadius))
+        if(Physics.CheckSphere(transform.position, sphereRadius, layerMask))
         {
             animator.SetInteger("DoorOpens", 1);
         }

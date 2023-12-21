@@ -3837,8 +3837,9 @@ GameObject:
   - component: {fileID: 1394085233}
   - component: {fileID: 1394085235}
   - component: {fileID: 1394085234}
+  - component: {fileID: 1394085236}
   m_Layer: 0
-  m_Name: Spot Light (1)
+  m_Name: Flickering Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3891,13 +3892,13 @@ Light:
   m_GameObject: {fileID: 1394085232}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 3
+  m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
   m_Range: 3.7979605
-  m_SpotAngle: 63.25686
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 119.85574
+  m_InnerSpotAngle: 79.412
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -3933,7 +3934,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1.0615941, y: 1}
   m_BounceIntensity: 2
@@ -3944,6 +3945,21 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1394085236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394085232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be083fede51fb594f827192d6f2a0bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLight: {fileID: 1394085235}
+  maxWait: 1
+  maxFlicker: 0.2
 --- !u!4 &1394823450
 Transform:
   m_ObjectHideFlags: 0
@@ -4451,7 +4467,7 @@ Transform:
   m_GameObject: {fileID: 1468866390}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6936029, y: -0.13753195, z: -0.13753195, w: 0.6936029}
-  m_LocalPosition: {x: -33.26, y: 2.967, z: -17.794}
+  m_LocalPosition: {x: -34.235, y: 2.855, z: -17.794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

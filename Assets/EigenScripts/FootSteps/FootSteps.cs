@@ -11,7 +11,7 @@ public class FootSteps : MonoBehaviour
         controller.GetComponent<CharacterController>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (controller.velocity.magnitude > 0.5)
         {

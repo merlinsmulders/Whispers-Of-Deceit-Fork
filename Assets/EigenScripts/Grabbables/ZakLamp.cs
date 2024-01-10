@@ -8,6 +8,7 @@ public class ZakLamp : MonoBehaviour
     public GameObject SpotLight;
     bool lightActive;
     bool canSwitch;
+    public AudioSource lightSwitchsound;
 
     public void Update()
     {
@@ -23,6 +24,7 @@ public class ZakLamp : MonoBehaviour
                 {
                     SpotLight.SetActive(true);
                     lightActive = true;
+                    lightSwitchsound.Play();
                 }
             }
             else
@@ -31,6 +33,7 @@ public class ZakLamp : MonoBehaviour
                 {
                     SpotLight.SetActive(false);
                     lightActive = false;
+                    lightSwitchsound.Play();
                 }
             }
         }

@@ -157,6 +157,7 @@ public class OVRPlayerController : MonoBehaviour
     private float FallSpeed = 0.0f;
     private OVRPose? InitialPose;
     public float InitialYRotation { get; private set; }
+    public AudioSource footSteps;
     private float MoveScaleMultiplier = 1.0f;
     private float RotationScaleMultiplier = 1.0f;
 
@@ -328,6 +329,15 @@ public class OVRPlayerController : MonoBehaviour
         {
             PreCharacterMove();
             Teleported = false;
+        }
+
+        if(Controller.velocity.magnitude > 0.5)
+        {
+            footSteps.Play();
+        }
+        else
+        {
+            footSteps.Stop();
         }
 
         Vector3 predictedXZ = Vector3.Scale((Controller.transform.localPosition + moveDirection), new Vector3(1, 0, 1));

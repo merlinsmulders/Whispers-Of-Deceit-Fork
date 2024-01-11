@@ -5,6 +5,7 @@ using UnityEngine;
 public class TestPlay : MonoBehaviour
 {
     public Animator openDoorAnimator;
+    public AudioSource startDoorAudio;
     public bool doorAlreadyOpened;
     public Collider handCollider;
     public GameObject player;
@@ -18,6 +19,7 @@ public class TestPlay : MonoBehaviour
         handCollider.enabled = true;
         if (!doorAlreadyOpened)
         {
+            startDoorAudio.Play();
             doorAlreadyOpened = true;
             openDoorAnimator.SetInteger("DoorOpen", 1);
         }

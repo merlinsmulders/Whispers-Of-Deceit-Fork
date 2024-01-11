@@ -5,11 +5,28 @@ using UnityEngine;
 public class BreathingTrigger : MonoBehaviour
 {
     public AudioSource monsterbreathing;
-    public void OnTriggerEnter(Collider other)
+    public float sphereRadius;
+    public LayerMask layerMask;
+    public void Update()
     {
-        if(other.transform.tag == "Player")
+        if (Physics.CheckSphere(transform.position, sphereRadius, layerMask))
         {
-            monsterbreathing.Play();
+            if(!monsterbreathing.isPlaying)
+            {
+                monsterbreathing.Play();
+            }
         }
+        else
+        {
+            if(monsterbreathing.isPlaying)
+            {
+                monsterbreathing.Stop();
+            }
+        }
+    }
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(transform.position, sphereRadius);
+        Gizmos.color = Color.cyan;
     }
 }

@@ -8,6 +8,7 @@ public class Hiding : MonoBehaviour
     public GameObject player;
     public GameObject target;
     public BoxCollider triggerActivator;
+    public AudioSource monsterAudio;
     public void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Hide")
@@ -16,12 +17,14 @@ public class Hiding : MonoBehaviour
             player.transform.position = target.transform.position;
             player.GetComponent<OVRPlayerController>().enabled = false;
             triggerActivator.enabled = false;
+            monsterAudio.Play();
             StartCoroutine(StopHiding());
         }
     }
     public IEnumerator StopHiding()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(17);
+        monsterAudio.Stop();
         player.transform.position = oldPlayerPos;
         player.GetComponent<OVRPlayerController>().enabled = true;
         triggerActivator.enabled = true;

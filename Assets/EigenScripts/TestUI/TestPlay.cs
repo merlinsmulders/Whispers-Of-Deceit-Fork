@@ -6,6 +6,9 @@ public class TestPlay : MonoBehaviour
 {
     public Animator openDoorAnimator;
     public AudioSource startDoorAudio;
+    public AudioSource voiceLinesStart;
+    public AudioClip firstVoice;
+    public AudioClip secondVoice;
     public bool doorAlreadyOpened;
     public Collider handCollider;
     public GameObject player;
@@ -19,13 +22,26 @@ public class TestPlay : MonoBehaviour
         handCollider.enabled = true;
         if (!doorAlreadyOpened)
         {
-            startDoorAudio.Play();
             doorAlreadyOpened = true;
-            openDoorAnimator.SetInteger("DoorOpen", 1);
+            PlayAudio();
         }
         else
         {
 
         }
+    }
+    public void PlayAudio()
+    {
+        voiceLinesStart.clip = firstVoice;
+        voiceLinesStart.Play();
+        StartCoroutine(PlaySecondAudio());
+    }
+    public IEnumerator PlaySecondAudio()
+    {
+        yield return new WaitForSeconds(8);
+        voiceLinesStart.clip = secondVoice;
+        voiceLinesStart.Play();
+        startDoorAudio.Play();
+        openDoorAnimator.SetInteger("DoorOpen", 1);
     }
 }

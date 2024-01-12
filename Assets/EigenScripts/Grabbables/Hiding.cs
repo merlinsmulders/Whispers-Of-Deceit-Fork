@@ -9,6 +9,7 @@ public class Hiding : MonoBehaviour
     public GameObject target;
     public BoxCollider triggerActivator;
     public AudioSource monsterAudio;
+    bool audioPlayed;
     public void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Hide")
@@ -17,8 +18,11 @@ public class Hiding : MonoBehaviour
             player.transform.position = target.transform.position;
             player.GetComponent<OVRPlayerController>().enabled = false;
             triggerActivator.enabled = false;
-            monsterAudio.Play();
-            StartCoroutine(StopHiding());
+            if(!audioPlayed)
+            {
+                monsterAudio.Play();
+                StartCoroutine(StopHiding());
+            }
         }
     }
     public IEnumerator StopHiding()

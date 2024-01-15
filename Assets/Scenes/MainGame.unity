@@ -5187,6 +5187,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b47e36715521d4e8a30d2c5b6e83e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1197997402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9053f34910974284d82328c5c3da6d2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2002580601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1197997406
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197997402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6245847919080791137, guid: 9053f34910974284d82328c5c3da6d2a, type: 3}
 --- !u!136 &1271632402
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8728,10 +8756,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Y bochtieeee
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9053f34910974284d82328c5c3da6d2a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9053f34910974284d82328c5c3da6d2a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1197997406}
   m_SourcePrefab: {fileID: 100100000, guid: 9053f34910974284d82328c5c3da6d2a, type: 3}
 --- !u!54 &2004142318
 Rigidbody:

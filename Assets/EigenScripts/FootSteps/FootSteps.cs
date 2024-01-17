@@ -13,13 +13,13 @@ public class FootSteps : MonoBehaviour
 
     void Update()
     {
-        if (controller.velocity.magnitude > 0.5)
-        {
-            footSteps.Play();
-        }
-        else
-        {
-            footSteps.Stop();
-        }
+        //if (controller.velocity.magnitude > Mathf.Epsilon)
+        //{
+        //    footSteps.Play();
+        //}
+        //else if (controller.velocity.magnitude == Mathf.Epsilon)
+        //{
+        //    footSteps.Stop();
+        //}
     }
 }

@@ -149,6 +149,8 @@ public class OVRPlayerController : MonoBehaviour
     /// </summary>
     public bool RotationEitherThumbstick = false;
 
+    public AudioSource footSteps;
+
     protected CharacterController Controller = null;
     protected OVRCameraRig CameraRig = null;
 
@@ -163,6 +165,7 @@ public class OVRPlayerController : MonoBehaviour
     // It is rare to want to use mouse movement in VR, so ignore the mouse by default.
     private bool SkipMouseRotation = true;
 
+    private bool footstepsPlaying;
     private bool HaltUpdateMovement = false;
     private bool prevHatLeft = false;
     private bool prevHatRight = false;
@@ -431,6 +434,23 @@ public class OVRPlayerController : MonoBehaviour
             if (primaryAxis.x > 0.0f)
                 MoveThrottle += ort * (primaryAxis.x * transform.lossyScale.x * moveInfluence * BackAndSideDampen *
                                        Vector3.right);
+
+            if(primaryAxis.y < 0.0f || primaryAxis.y > 0.0f || primaryAxis.x < 0.0f || primaryAxis.x > 0.0f)
+            {
+                if (!footstepsPlaying)
+                {
+                    footSteps.Play();
+                    footstepsPlaying = true;
+                }
+            }
+            if(primaryAxis.y == 0.0f || primaryAxis.x == 0.0f)
+            {
+                if(footstepsPlaying)
+                {
+                    footSteps.Stop();
+                    footstepsPlaying = false;
+                }
+            }
         }
 
         if (EnableRotation)

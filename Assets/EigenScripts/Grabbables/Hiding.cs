@@ -4,24 +4,29 @@ using UnityEngine;
 
 public class Hiding : MonoBehaviour
 {
-    public Vector3 oldPlayerPos;
+    Vector3 oldPlayerPos;
     public GameObject player;
     public GameObject target;
     public BoxCollider triggerActivator;
     public AudioSource monsterAudio;
+    public AudioSource sideSFX;
+    public Animator monsterCart;
     bool audioPlayed;
     public void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Hide")
         {
-            oldPlayerPos = player.transform.position;
-            player.transform.position = target.transform.position;
-            player.GetComponent<OVRPlayerController>().enabled = false;
-            triggerActivator.enabled = false;
             if(!audioPlayed)
             {
                 monsterAudio.Play();
+                monsterCart.SetTrigger("StartEvent");
                 StartCoroutine(StopHiding());
+                oldPlayerPos = player.transform.position;
+                player.transform.rotation = Quaternion.Euler(0, 180, 0);
+                player.transform.position = target.transform.position;
+                player.GetComponent<OVRPlayerController>().enabled = false;
+                triggerActivator.enabled = false;
+                audioPlayed = true;
             }
         }
     }

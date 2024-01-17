@@ -7158,7 +7158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394920756}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7660445, z: -0, w: -0.6427876}
   m_LocalPosition: {x: -34, y: 0.6, z: -17.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7166,7 +7166,7 @@ Transform:
   - {fileID: 1394823454}
   - {fileID: 2064208291}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 260, z: 0}
 --- !u!4 &1394823454
 Transform:
   m_ObjectHideFlags: 0
@@ -7667,7 +7667,7 @@ Animator:
   m_GameObject: {fileID: 1452027893}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e8a875c0618a88e4fb86ba4f7b129bed, type: 2}
+  m_Controller: {fileID: 9100000, guid: 66600a195d7380046881820c3d0b2e20, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21055,11 +21055,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a57264a1b904f4f90d556ed4aa4406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oldPlayerPos: {x: 0, y: 0, z: 0}
   player: {fileID: 1394920756}
   target: {fileID: 38137387}
   triggerActivator: {fileID: 1600706644}
   monsterAudio: {fileID: 566818577}
+  sideSFX: {fileID: 0}
+  monsterCart: {fileID: 1452027894}
 --- !u!114 &3480180545763960025
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class Hiding : MonoBehaviour
     public BoxCollider triggerActivator;
     public AudioSource monsterAudio;
     public AudioSource sideSFX;
+    public AudioSource footsteps;
     public Animator monsterCart;
     bool audioPlayed;
     public void OnTriggerEnter(Collider other)
@@ -21,6 +22,8 @@ public class Hiding : MonoBehaviour
                 monsterAudio.Play();
                 monsterCart.SetTrigger("StartEvent");
                 StartCoroutine(StopHiding());
+                StartCoroutine(BreakingSound());
+                footsteps.Stop();
                 oldPlayerPos = player.transform.position;
                 player.transform.rotation = Quaternion.Euler(0, 180, 0);
                 player.transform.position = target.transform.position;
@@ -37,5 +40,10 @@ public class Hiding : MonoBehaviour
         player.transform.position = oldPlayerPos;
         player.GetComponent<OVRPlayerController>().enabled = true;
         triggerActivator.enabled = true;
+    }
+    public IEnumerator BreakingSound()
+    {
+        yield return new WaitForSeconds(3.5f);
+        sideSFX.Play();
     }
 }

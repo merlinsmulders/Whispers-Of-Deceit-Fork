@@ -33,10 +33,6 @@ public class DoorOpenscript : MonoBehaviour
             }
             animator.SetInteger("DoorsOpens", 0);
         }
-        if(!doorOpenSound.isPlaying)
-        {
-            Debug.Log("sound played");
-        }
     }
     public void OnDrawGizmos()
     {

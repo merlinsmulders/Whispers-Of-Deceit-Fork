@@ -11,6 +11,7 @@ public class Hiding : MonoBehaviour
     public AudioSource monsterAudio;
     public AudioSource sideSFX;
     public AudioSource footsteps;
+    public AudioSource footstepApp;
     public Animator monsterCart;
     bool audioPlayed;
     public void OnTriggerEnter(Collider other)
@@ -20,6 +21,7 @@ public class Hiding : MonoBehaviour
             if(!audioPlayed)
             {
                 monsterAudio.Play();
+                footstepApp.Stop();
                 monsterCart.SetTrigger("StartEvent");
                 StartCoroutine(StopHiding());
                 StartCoroutine(BreakingSound());

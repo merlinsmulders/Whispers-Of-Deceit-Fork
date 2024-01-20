@@ -8,6 +8,7 @@ TagManager:
   - Hide
   - UI
   - player
+  - App
   layers:
   - Default
   - TransparentFX

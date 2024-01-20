@@ -409,7 +409,7 @@ PrefabInstance:
     - target: {fileID: 1881694832576856463, guid: 7b0f7d481f6cf6643acef99bef0c3484,
         type: 3}
       propertyPath: m_Name
-      value: hallway straight test (4)
+      value: hallway straight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de278adfa76523c4ca5c8041eabf933d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 978821500}
+  animator: {fileID: 271088678}
   sphereRadius: 3
   layerMask:
     serializedVersion: 2
@@ -3521,6 +3521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 751421278}
   - component: {fileID: 751421277}
+  - component: {fileID: 751421279}
   m_Layer: 0
   m_Name: Dolly Cart
   m_TagString: Untagged
@@ -3561,6 +3562,27 @@ Transform:
   - {fileID: 1569403957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &751421279
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751421276}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 01b3048d42d9b8f43a23ae01faafbbfb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &753741297
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,6 +4319,21 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9bc6409e8b970cd4cbd488eaeeaaa157,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5886425278458836884, guid: 9bc6409e8b970cd4cbd488eaeeaaa157,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5886425278458836884, guid: 9bc6409e8b970cd4cbd488eaeeaaa157,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5886425278458836884, guid: 9bc6409e8b970cd4cbd488eaeeaaa157,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9bc6409e8b970cd4cbd488eaeeaaa157,
@@ -5231,7 +5268,7 @@ PrefabInstance:
     - target: {fileID: 1881694832576856463, guid: 7b0f7d481f6cf6643acef99bef0c3484,
         type: 3}
       propertyPath: m_Name
-      value: hallway straight test (2)
+      value: hallway straight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6008,7 +6045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1321216431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6592,6 +6629,7 @@ GameObject:
   - component: {fileID: 1401563594}
   - component: {fileID: 1409251581}
   - component: {fileID: 1409251582}
+  - component: {fileID: 1409251583}
   m_Layer: 8
   m_Name: Player
   m_TagString: player
@@ -7031,6 +7069,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1409251583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394920756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9f9ff6025adee4bb785a6032a30994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appAnimator: {fileID: 751421279}
+  monsterwWalk: {fileID: 1569403958}
+  doorBanging: {fileID: 8300000, guid: de2dfeebcbeba3041a51441866084459, type: 3}
+  doorOpen: {fileID: 978821502}
 --- !u!1 &1452027893
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,7 +7219,7 @@ PrefabInstance:
     - target: {fileID: 1881694832576856463, guid: 7b0f7d481f6cf6643acef99bef0c3484,
         type: 3}
       propertyPath: m_Name
-      value: hallway straight test (1)
+      value: hallway straight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7736,7 +7790,7 @@ PrefabInstance:
     - target: {fileID: 1881694832576856463, guid: 7b0f7d481f6cf6643acef99bef0c3484,
         type: 3}
       propertyPath: m_Name
-      value: hallway straight test (5)
+      value: hallway straight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7793,7 +7847,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9ab1f844cd49ee54fb4b3490de99692d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8329,7 +8383,7 @@ PrefabInstance:
     - target: {fileID: 1881694832576856463, guid: 7b0f7d481f6cf6643acef99bef0c3484,
         type: 3}
       propertyPath: m_Name
-      value: hallway straight test (3)
+      value: hallway straight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9773,6 +9827,111 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2111675796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111675800}
+  - component: {fileID: 2111675799}
+  - component: {fileID: 2111675798}
+  - component: {fileID: 2111675797}
+  m_Layer: 0
+  m_Name: TriggerBeforeHide
+  m_TagString: App
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &2111675797
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111675796}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4403214, y: 1.5457245, z: 0.40530586}
+  m_Center: {x: 0.22016072, y: 0.27286226, z: -0.29734707}
+--- !u!23 &2111675798
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111675796}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2111675799
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111675796}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2111675800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111675796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.67, y: 1.08, z: -21.577}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2122054012
 GameObject:
   m_ObjectHideFlags: 0
@@ -19137,7 +19296,7 @@ PrefabInstance:
     - target: {fileID: 8667932409686885306, guid: 4115e3862e47e504892eac75679f050f,
         type: 3}
       propertyPath: m_Name
-      value: y bochtfbx
+      value: y bocht
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19764,6 +19923,7 @@ MonoBehaviour:
   monsterAudio: {fileID: 566818577}
   sideSFX: {fileID: 620795062}
   footsteps: {fileID: 1468121018}
+  footstepApp: {fileID: 1569403958}
   monsterCart: {fileID: 1452027894}
 --- !u!114 &3480180545763960025
 MonoBehaviour:
@@ -28396,7 +28556,7 @@ PrefabInstance:
     - target: {fileID: 1881694832576856463, guid: 7b0f7d481f6cf6643acef99bef0c3484,
         type: 3}
       propertyPath: m_Name
-      value: hallway straight test
+      value: hallway straight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33870,3 +34030,4 @@ SceneRoots:
   - {fileID: 258154157}
   - {fileID: 1328601694}
   - {fileID: 751421278}
+  - {fileID: 2111675800}

@@ -21,7 +21,6 @@ public class DoorOpenscript : MonoBehaviour
                 doorOpenSound.Play();
                 isSoundPlaying = true;
             }
-            animator.SetInteger("DoorsOpens", 0);
         }
         else
         {
@@ -31,7 +30,6 @@ public class DoorOpenscript : MonoBehaviour
                 doorOpenSound.Play();
                 isSoundPlaying = false;
             }
-            animator.SetInteger("DoorsOpens", 0);
         }
     }
     public void OnDrawGizmos()

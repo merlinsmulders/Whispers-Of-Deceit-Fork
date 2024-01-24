@@ -8,8 +8,10 @@ public class LijkWeg : MonoBehaviour
     public float sphereRadius;
     public LayerMask layerMask;
     public AudioSource sFX;
+    public AudioSource earPiece;
     public AudioClip victim;
     public AudioClip monster;
+    public AudioClip labVoiceline;
     bool audioPlayed;
 
 
@@ -32,6 +34,13 @@ public class LijkWeg : MonoBehaviour
         yield return new WaitForSeconds(5);
         sFX.clip = monster;
         sFX.Play();
+        StartCoroutine(VoiceLine());
+    }
+    public IEnumerator VoiceLine()
+    {
+        yield return new WaitForSeconds(7.5f);
+        earPiece.clip = labVoiceline;
+        earPiece.Play();
     }
     public void OnDrawGizmos()
     {

@@ -7,11 +7,14 @@ public class Hiding : MonoBehaviour
     Vector3 oldPlayerPos;
     public GameObject player;
     public GameObject target;
+    public DoorOpenscript door;
     public BoxCollider triggerActivator;
     public AudioSource monsterAudio;
     public AudioSource sideSFX;
     public AudioSource footsteps;
     public AudioSource footstepApp;
+    public AudioSource earPiece;
+    public AudioClip medicalEndVoiceLine;
     public Animator monsterCart;
     bool audioPlayed;
     public void OnTriggerEnter(Collider other)
@@ -42,6 +45,9 @@ public class Hiding : MonoBehaviour
         player.transform.position = oldPlayerPos;
         player.GetComponent<OVRPlayerController>().enabled = true;
         triggerActivator.enabled = true;
+        earPiece.clip = medicalEndVoiceLine;
+        earPiece.Play();
+        door.enabled = true;
     }
     public IEnumerator BreakingSound()
     {

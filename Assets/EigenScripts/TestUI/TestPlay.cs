@@ -8,7 +8,6 @@ public class TestPlay : MonoBehaviour
     public AudioSource startDoorAudio;
     public AudioSource voiceLinesStart;
     public AudioClip firstVoice;
-    public AudioClip secondVoice;
     public bool doorAlreadyOpened;
     public Collider handCollider;
     public GameObject player;
@@ -38,9 +37,7 @@ public class TestPlay : MonoBehaviour
     }
     public IEnumerator PlaySecondAudio()
     {
-        yield return new WaitForSeconds(8);
-        voiceLinesStart.clip = secondVoice;
-        voiceLinesStart.Play();
+        yield return new WaitForSeconds(20);
         startDoorAudio.Play();
         openDoorAnimator.SetInteger("DoorOpen", 1);
     }

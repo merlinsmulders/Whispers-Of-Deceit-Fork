@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MonsterApproaching : MonoBehaviour
 {
     public GameObject target;
-    public GameObject playerCamera;
     public GameObject deathTarget;
     public GameObject selectTool;
     public GameObject selectTool2;
     public Animator appAnimator;
     public Animator doorAni;
     public AudioSource monsterwWalk;
-    public AudioClip doorBanging;
     public AudioSource neckSnap;
+    public AudioSource earPiece;
+    public AudioClip medicalBeginVoiceLine;
+    public AudioClip doorBanging;
     public DoorOpenscript doorOpen;
     bool alreadyPlayed;
     public void OnTriggerEnter(Collider other)
@@ -46,6 +48,8 @@ public class MonsterApproaching : MonoBehaviour
     public IEnumerator MonsterWalkstoPlayer()
     {
         yield return new WaitForSeconds(7);
+        earPiece.clip = medicalBeginVoiceLine;
+        earPiece.Play();
     }
     public IEnumerator StopAudio()
     {
@@ -57,14 +61,7 @@ public class MonsterApproaching : MonoBehaviour
     public IEnumerator DeathScreenActive()
     {
         yield return new WaitForSeconds(5);
-        Debug.Log(deathTarget.transform.position);
-        transform.position = deathTarget.transform.position;
-        playerCamera.transform.position = deathTarget.transform.position;
-        Debug.Log(transform.position);
-        doorOpen.enabled = true;
+        SceneManager.LoadScene("DeathScreen");
         monsterwWalk.Stop();
-        neckSnap.Play();
-        selectTool.SetActive(true);
-        selectTool2.SetActive(true);
     }
 }
